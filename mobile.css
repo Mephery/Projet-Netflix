@@ -1,0 +1,74 @@
+@media screen and (max-width: 600px) {
+    /* 1. On empêche le scroll horizontal sur toute la page */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 2. Le Header : on cache le menu texte mais on garde le logo */
+    .principal_navigation nav {
+        display: none; /* Cache les liens (Accueil, Séries...) */
+    }
+
+    .principal_navigation img {
+        width: 80px !important; /* On réduit le logo Netflix */
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    /* 3. Ajustement des icônes de droite (Recherche, Notifs, Profil) */
+    .seconde_navigation nav ul {
+        gap: 8px; /* On serre les icônes pour qu'elles rentrent */
+    }
+
+    #Jeunesse {
+        display: none; /* On cache le texte "Jeunesse" pour gagner de la place */
+    }
+
+    /* 4. Le contenu principal (Titre Cyberpunk + texte) */
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .container img {
+        width: 100%; /* Le titre "Cyberpunk" s'adapte à la largeur */
+        max-width: 250px;
+    }
+
+    .container p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Plus lisible */
+    }
+
+    /* 5. Les boutons Lecture / Infos */
+    .btn_info {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #Lecture, #Infos {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* 6. Les lignes de films (Carrousel) */
+    .movie-card {
+        flex: 0 0 140px; /* Cartes plus petites */
+        height: 80px;
+    }
+
+    /* 7. On cache les éléments qui flottent à droite et font déborder */
+    .left_element {
+        display: none; /* L'âge +16 et le son prennent trop de place ici */
+    }
+}

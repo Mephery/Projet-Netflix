@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="principal_navigation">
+            <img src="./images/logo_netflix.png" alt="">
+            <nav>
+                <ul>
+                    <li>
+                        Accueil
+                    </li>
+                    <li>
+                        Séries
+                    </li>
+                    <li>Films</li>
+                    <li>
+                        Jeux
+                    </li>
+                    <li>
+                        Nouveautés les plus regardées
+                    </li>
+                    <li>
+                        Ma liste
+                    </li>
+                    <li>
+                        Explorer par langue
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="seconde_navigation">
+            <nav>
+                <ul>
+                    <li class="nav-item-search">
+                        <div class="search-box" id="searchBox">
+                            <img id="Recherche" src="./images/search_logo.png" alt="Recherche" width="30">
+        
+                            <input type="text" id="searchInput" placeholder="Titres, personnages, genres" class="search-input">
+                        </div>
+                    </li>
+                    <li>
+                        <button id="Jeunesse"> Jeunesse </button>
+                    </li>
+                    <li class="nav-item-notifications">
+    <img id="Notifications" src="./images/bell_logo.png" alt="Notifications" width="40px">
+    
+    <ul class="dropdown-notifications">
+        <li class="notif-item">
+            <div class="notif-image">
+                <img src="./images/notification1.png" alt="Miniature notif 1">
+            </div>
+            <div class="notif-content">
+                <p class="notif-title">Revoir vos favoris</p>
+                <p class="notif-text">Regardez à nouveau vos films préférés - "Les Minions" est disponible !</p>
+                <span class="notif-date">Il y a 2 jours</span>
+            </div>
+        </li>
+        <hr>
+        <li class="notif-item">
+            <div class="notif-image">
+                <img src="./images/notification2.png" alt="Miniature notif 2">
+            </div>
+            <div class="notif-content">
+                <p class="notif-title">Nouveauté</p>
+                <p class="notif-text">A découvrir : La saison 1 de One Piece en live action est disponible.</p>
+                <span class="notif-date">Il y a 5 jours</span>
+            </div>
+        </li>
+    </ul>
+</li>
+                    <li class="nav-item-profil">
+                        <img id="Profil" src="./images/avatar.png" alt="Profil" width="40px">
+                    <span class="menu_deroulant">▲</span>
+                    <ul class="dropdown-menu">
+                        <li><img src="./images/user1.png" width="30"> User 1</li>
+                        <li><img src="./images/user2.png" width="30"> User 2</li>
+                        <li><img src="./images/pen_icone.png" alt="">Gérer les profils</li>
+                        <li><img src="./images/transfer_icone.png" alt=""> Transférer un profil</li>
+                        <li><img src="./images/account_icone.png" alt="">Compte</li>
+                        <li><img src="./images/help_icone.png" alt="">Centre d'aide</li>
+                        <hr>
+                        <li onclick="window.location.href='login.html'" style="cursor: pointer;">Se déconnecter</li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div>
+                <img src="./images/Cyberpunk.png" alt="titre">
+                <p>
+                    Dans une société obsédée par la technologie et les modifications corporelles, David Martinez, un gamin des rues brillant mais fauché, perd tout ce qu’il a. Pour survivre à Night City, il choisit de devenir un Edgerunner : un mercenaire hors-la-loi, aussi appelé Cyberpunk.
+                </p>
+                <div class="btn_info">
+                    <button class="btn_titre" id="Lecture">▶ Lecture </button>
+                    <button class="btn_titre" id="Infos">ⓘ Plus d'infos </button>
+                </div>
+            </div>
+            <div class="left_element">
+    <button id="btn_control" class="repeat">
+        <img id="sound_icon" src="./images/sound_on_logo.png" alt="Volume">
+    </button>
+    
+    <span class="classification">+16</span>
+            </div>
+        </div>
+
+        <section class="row">
+    <h2 class="row-title">Seulement sur Netflix</h2>
+    
+    <div class="row-container">
+        <div class="movie-card" data-video="./vidéos/Arcane.mp4">
+            <img src="./images/movie1.png" alt="Arcane">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/Orange.mp4">
+            <img src="./images/movie2.png" alt="Orange is the New Black">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/Witcher.mp4">
+            <img src="./images/movie3.png" alt="The Witcher">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/Echecs.mp4">
+            <img src="./images/movie4.png" alt="Le jeu de la dame">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/Mercredi.mp4">
+            <img src="./images/movie5.png" alt="Mercredi">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/Kingdom.mp4">
+            <img src="./images/movie6.png" alt="The Last Kingdom">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/blackmirror.mp4">
+            <img src="./images/movie7.png" alt="Black Mirror">
+            <video class="preview-video" muted loop></video>
+        </div>
+    </div>
+</section>
+
+<section class="row">
+    <h2 class="row-title">Séries primées</h2>
+    <div class="row-container">
+        <div class="movie-card" data-video="./vidéos/breaking_bad.mp4">
+            <img src="./images/movier8.png" alt="Breaking Bad">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/viking.mp4">
+            <img src="./images/movier9.png" alt="Vinking">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/peakyblinder.mp4">
+            <img src="./images/movier10.png" alt="Peaky Blinders">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/DeathNote.mp4">
+            <img src="./images/movier11.png" alt="Death Note">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/casadepapel.mp4">
+            <img src="./images/movier12.png" alt="La Casa de Papel">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class="movie-card" data-video="./vidéos/Saul.mp4">
+            <img src="./images/movier13.png" alt="Better Call Saul">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+        <div class=" movie-card" data-video="./vidéos/Adolescence.mp4">
+            <img src="./images/movier14.png" alt="Adolescence">
+            <video class="preview-video" muted loop></video>
+        </div>
+
+
+</section>
+
+    </main>
+    <video id="bg_video" src="/vidéos/Cyberpunk2.mp4" autoplay loop muted playsinline></video>
+    <audio id="my_audio" src="./sounds/Cyberpunk Edgerunners  Opening Credits  Netflix.mp3"></audio>
+    <script>
+        const audio = document.getElementById('my_audio');
+        const btn = document.getElementById('btn_control');
+        const soundIcon = document.getElementById('sound_icon');
+
+        // Chemin des images
+
+        const imagePlay = './images/sound_on_logo.png';
+        const imagePause = './images/sound_off_logo.png';
+
+        btn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                soundIcon.src = imagePlay; 
+            } else {
+                audio.pause();
+                soundIcon.src = imagePause;
+            }
+        });
+
+        const rechercheIcon = document.getElementById('Recherche');
+        const searchBox = document.getElementById('searchBox');
+        const searchInput = document.getElementById('searchInput');
+
+        rechercheIcon.addEventListener('click', () => {
+            searchBox.classList.toggle('active');
+            if (searchBox.classList.contains('active')) {
+                searchInput.focus();
+            }
+        });
+
+        
+        
+    const header = document.querySelector('header');
+    
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+    const movieCards = document.querySelectorAll('.movie-card');
+
+    movieCards.forEach(card => {
+        const video = card.querySelector('.preview-video');
+        const VideoSrc = card.getAttribute('data-video');
+        
+        card.addEventListener('mouseenter', () => {;
+            if (video.src === "") {
+                video.src = VideoSrc;}
+                video.play().catch(error => {
+                    console.log("Erreur lors de la lecture de la vidéo : ", error);
+                });
+            video.style.opacity = 1;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+                video.pause();
+                video.style.opacity = 0;
+                video.currentTime = 0;
+        });
+    });
+    </script>
+</body>
+
+</html>

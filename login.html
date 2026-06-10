@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Connexion</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body class="login-wrapper">
+
+    <header class="login-header">
+        <img src="./images/logo_netflix.png" alt="Netflix" class="logo">
+    </header>
+
+    <main class="login-content">
+        <div class="login-card">
+            <h1>S'identifier</h1>
+            
+            <form action="#" method="post">
+                <div class="input-container">
+                    <input type="email" id="email" required>
+                    <label for="email">E-mail ou numéro de téléphone</label>
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" id="password" required>
+                    <label for="password">Mot de passe</label>
+                </div>
+                
+                <button type="button" class="btn-login" onclick="window.location.href='index.html'">Se connecter</button>
+            </form>
+            
+            <div class="login-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+                <a href="#">Besoin d'aide ?</a>
+            </div>
+            
+            <div class="login-signup">
+                <span>Première visite sur Netflix ?</span>
+                <a href="#">Inscrivez-vous maintenant</a>.
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
